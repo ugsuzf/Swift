@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Currency_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XV-of-hH2">
+                                <rect key="frame" x="20" y="194" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTU-li-jcs">
+                                <rect key="frame" x="0.0" y="515" width="414" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="347" id="4k7-dG-bpg"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-cz-QOJ">
+                                <rect key="frame" x="20" y="412" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OTU-li-jcs" firstAttribute="centerX" secondItem="z1v-cz-QOJ" secondAttribute="centerX" id="0xg-O0-JlG"/>
+                            <constraint firstItem="z1v-cz-QOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Au-KK-yCl"/>
+                            <constraint firstItem="OTU-li-jcs" firstAttribute="top" secondItem="z1v-cz-QOJ" secondAttribute="bottom" constant="69" id="9DU-BA-7Kf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7XV-of-hH2" secondAttribute="trailing" constant="20" id="EgI-DV-psR"/>
+                            <constraint firstItem="7XV-of-hH2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J2z-oG-g7u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1v-cz-QOJ" secondAttribute="trailing" constant="20" id="LvC-36-AnE"/>
+                            <constraint firstItem="7XV-of-hH2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Nx8-h6-top"/>
+                            <constraint firstItem="OTU-li-jcs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o40-OK-MXG"/>
+                            <constraint firstItem="OTU-li-jcs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zrg-9f-jfa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="OTU-li-jcs" id="VNo-kE-9y7"/>
+                        <outlet property="priceLabel" destination="7XV-of-hH2" id="aIO-wf-rlB"/>
+                        <outlet property="textField" destination="z1v-cz-QOJ" id="N0f-SM-HWt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
