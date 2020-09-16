@@ -23,7 +23,7 @@ struct CryptoListViewModel {
 
 extension String {
     func printMyName() {
-        print("atil")
+    
     }
 }
 
