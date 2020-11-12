@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    var animationView: AnimationView?
+    override func viewDidLoad() { 
         // Do any additional setup after loading the view.
+        animationView = .init(name: "rocket")
+        animationView?.frame = view.bounds
+        animationView?.loopMode = .loop
+        view.addSubview(animationView!)
+        animationView?.play()
+        
+        
     }
 
 
